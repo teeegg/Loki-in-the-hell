@@ -1,0 +1,95 @@
+body{
+  background-color: #4ABDAC;
+}
+.logo{
+  font-family: "League Script", cursive;
+  font-size: 60px;
+  float: left;
+  margin: 10px;
+}
+.logo>a:link{
+  color: #FC4A1A;
+  text-decoration: none;
+}
+.logo>a:visited{
+  color: #FC4A1A;
+}
+/*search area*/
+.search{
+  float: right;
+  }
+.search input:first-child{
+  width: 200px;
+  height: 20px;
+  margin: 6px;
+  margin-top: 50px;
+  border-radius: 25px;
+  outline: none;
+  font-family: 'Asar',serif;
+  font-size: 15px;
+  font-style: italic;
+  color: gray;
+  padding: 2px;
+}
+.search input:last-child{
+  margin: 5px;
+  position: relative;
+  top: 10px;
+  right:4px;
+}
+/*main menu including dropdown*/
+.menu-bar{
+  list-style: none;
+}
+.menu-bar>li{
+  float: left;
+}
+ul a{
+  display: block;
+  text-decoration: none;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  background-color: #2f3e45;
+}
+.menu-items li:first-child a{
+  border-radius: 10px 0 0 10px;
+}
+.menu-items li:last-child a{
+  border-radius: 0 10px 10px 0;
+}
+.dropdown{
+  position:relative;
+}
+.dropdown-items{
+  padding: 0;
+  display: none;
+  position:absolute;
+}
+.dropdown-items li:hover a {
+  background-color: red;
+}
+.dropdown:hover .dropdown-items{
+  display:block;
+}
+.menu-bar{
+  display: table;
+}
+.menu-bar li{
+  margin: 10px;
+  display: table-cell;
+  float: left;
+  font-family: "Lobster",cursive;
+  font-size: 20px;
+  width: 15%;
+}
+.dropdown-items li{
+  display: block;
+  float: left;
+  width: auto;
+}
+.menu-bar{
+  width: 110%;
+}
