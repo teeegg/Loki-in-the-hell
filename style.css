@@ -1,10 +1,6 @@
 body{
   background-color: #4ABDAC;
 }
-@font-face {
-    font-family: 'League Script', cursive;
-    src: url("https://fonts.googleapis.com/css?family=League+Script");
-}
 .logo{
   font-family: "League Script", cursive;
   font-size: 60px;
@@ -82,11 +78,11 @@ ul a{
   display: table;
 }
 .menu-bar li{
-  margin: 10px;
+  margin: 1em;
   display: table-cell;
   float: left;
   font-family: "Lobster",cursive;
-  font-size: 20px;
+  font-size: 0.95em;
   width: 15%;
 }
 .dropdown-items li{
@@ -97,3 +93,5 @@ ul a{
 .menu-bar{
   width: 110%;
 }
+
+li.
