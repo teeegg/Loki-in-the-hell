@@ -1,64 +1,138 @@
 <!DOCtype html>
 <html>
-<head>
-  <title>Kitchenlife | Where you can find a recipe</title>
-  <!--Icon on the tag of a browser-->
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="shortcut icon" href="images/main.ico">
-</head>
-<header id='header01'>
+  <head>
+    <meta charset="utf-8">
+    <title>Kitchenlife | Where you can find a recipe</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <!--Icon on the tag of a browser-->
+    <link rel="shortcut icon" href="images/main.ico">
+    <meta name="author" content="Shaun Xiong","Simon Shen">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="A Kitchen Meal Website by 26 April 2017">
+  </head>
 
-  <script src='jquery-3.2.1.min.js'></script>
-  <!--JavaScript Date-->
-  <script>
-    document.getElementById('header01').innerHTML = Date();
-    $('#header01').css('color', 'white');
-  </script>
+  <header id='header01'>
 
-</header>
-<body>
+    <script src='jquery-3.2.1.min.js'></script>
+    <!--JavaScript Date-->
+    <script>
+      document.getElementById('header01').innerHTML = Date();
+      $('#header01').css('color', 'white');
+    </script>
 
-  <!--JQuery-->
-  <script src='jquery-3.2.1.min.js'></script>
-  <script src='bg.js'></script>
+  </header>
+  <body>
 
-  <!--Logo-->
-  <div class="logo">
-    <a href="index.html" title="Kitchenlife">Kitchenlife</a>
-  </div>
-  <!--search form-->
-  <div class="search">
-        <!--search.php waiting to be inplemented-->
-    <form method="get" name="search" action="null">
-      <input type="text" placeholder="Search recipes/authors"></input>
-      <input type="image" name="submit" src="images/search.svg" height="20px" width="20px"></input>
-    </form>
-  </div>
-  <!--menubar-->
-  <div class="menu-bar">
-    <ul class="menu-items">
-      <li class="menu"><a href="index.html" target="_blank">Home</a></li>
+    <!--JQuery:Add a background-image-->
+    <script src='jquery-3.2.1.min.js'></script>
+    <script src='bg.js'></script>
+    <script>
+      $(function(){
+        $(".swiper-container").load("swiper.html");
+      });
+    </script>
 
-      <li class="dropdown"><a href="recipe.html" target="_blank">Recipes</a>
-      <ul class="dropdown-items">
-        <li><a href="#">recipe 1</a></li>
-        <li><a href="#">recipe 2</a></li>
-        </ul>
-      </li>
-
-      <li class="dropdown"><a href="ingredient.html" target="_blank">Ingredient</a>
-      <ul class="dropdown-items">
-        <li><a href="#">ingredient 1</a></li>
-        <li><a href="#">ingredient 2</a></li>
+    <!--Logo-->
+    <div class="logo">
+      <a href="index.html" title="Kitchenlife">Kitchenlife</a>
+    </div>
+    <!--search form-->
+    <div class="search">
+          <!--search.php waiting to be inplemented-->
+      <form method="get" name="search" action="null">
+        <input type="text" placeholder="Search recipes/authors"></input>
+        <input type="image" name="submit" src="images/search.svg" height="20px" width="20px"></input>
+      </form>
+    </div>
+    <!--menubar-->
+    <div class="menuBar">
+      <ul>
+        <li class="menuItem"><a class="active" href="home">Home</a></li>
+        <li class="dropdown"><a href="receipt" class="dropbtn">Receipt</a>
+          <div class="dropdown-content">
+            <a href="receipt1">Receipt 1</a>
+            <a href="receipt2">Receipt 2</a>
+          </div>
+        </li>
+        <li class="dropdown"><a href="ingredients" class="dropbtn">Ingredients</a>
+          <div class="dropdown-content">
+            <a href="ingredient1">Ingredient 1</a>
+            <a href="ingredient2">Ingredient 2</a>
+          </div>
+        </li>
+        <li class="menuItem"><a href="health">Health</a></li>
+        <li class="menuItem"><a href="myPage">My Page</a></li>
       </ul>
-      </li>
+    </div>
+    <!--
+    <div class="menu-bar">
+      <ul class="menu-items">
+        <li class="menu"><a href="index.html" target="_blank">Home</a></li>
 
-      <li class="menu"><a href="health.html" target="_blank">Health</a></li>
+        <li class="dropdown"><a href="recipe.html" target="_blank">Recipes</a>
+        <ul class="dropdown-items">
+          <li><a href="#">recipe 1</a></li>
+          <li><a href="#">recipe 2</a></li>
+          </ul>
+        </li>
 
-      <li class="menu"><a href="mypage.html" target="_blank">My Page</a></li>
+        <li class="dropdown"><a href="ingredient.html" target="_blank">Ingredient</a>
+        <ul class="dropdown-items">
+          <li><a href="#">ingredient 1</a></li>
+          <li><a href="#">ingredient 2</a></li>
+        </ul>
+        </li>
 
-    </ul>
-  </div>
-<!--Searchbox-->
-</body>
+        <li class="menu"><a href="health.html" target="_blank">Health</a></li>
+
+        <li class="menu"><a href="mypage.html" target="_blank">My Page</a></li>
+
+      </ul>
+    </div>
+    -->
+
+    <!-- Swiper Window-->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">Slide 10</div>
+          </div>
+
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+          pagination: '.swiper-pagination',
+          nextButton: '.swiper-button-next',
+          prevButton: '.swiper-button-prev',
+          paginationClickable: true,
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: 2500,
+          autoplayDisableOnInteraction: false
+      });
+    </script>
+
+
+  <!--Searchbox-->
+  </body>
 </html>
