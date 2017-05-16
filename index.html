@@ -8,31 +8,22 @@
     <link rel="stylesheet" href="css/nav.css">
     <!--Icon on the tag of a browser-->
     <link rel="shortcut icon" href="images/main.ico">
-    <meta name="author" content="Shaun Xiong","Simon Shen">
+    <meta name="author" content="Shaun Xiong, Simon Shen">
     <meta name="robots" content="index, follow">
     <meta name="description" content="A Kitchen Meal Website by 26 April 2017">
-  </head>
-
-  <header id='header01'>
-
     <script src='jquery-3.2.1.min.js'></script>
     <!--JavaScript Date-->
-    <script>
-      document.getElementById('header01').innerHTML = Date();
-      $('#header01').css('color', 'white');
-    </script>
+    
+  </head>
 
-  </header>
+  
   <body>
-
-    <!--JQuery:Add a background-image-->
-    <script src='jquery-3.2.1.min.js'></script>
-    <script src='bg.js'></script>
-    <script>
-      $(function(){
-        $(".swiper-container").load("swiper.html");
-      });
-    </script>
+    <header id='header01'>
+        <script>
+            document.getElementById('header01').innerHTML = Date();
+            $('#header01').css('color', 'white');
+        </script>
+    </header>
 
     <!--Logo-->
     <div class="logo">
@@ -42,8 +33,8 @@
     <div class="search">
           <!--search.php waiting to be inplemented-->
       <form method="get" name="search" action="null">
-        <input type="text" placeholder="Search recipes/authors"></input>
-        <input type="image" name="submit" src="images/search.svg" height="20px" width="20px"></input>
+        <input type="text" placeholder="Search recipes/authors">
+        <input type="image" name="submit" src="images/search.svg" height="20px" width="20px">
       </form>
     </div>
     <!--menubar-->

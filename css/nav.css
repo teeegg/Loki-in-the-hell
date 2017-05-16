@@ -1,6 +1,11 @@
 
 .menuBar {
   margin: auto;
+    position: absolute;
+    z-index: 99;
+    width: 80%;
+    top: 9em;
+    margin: 0 10%;
 }
 
 ul {
@@ -9,7 +14,6 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #2f3e45;
-  width: 80%;
 }
 .menuBar li {
   float: left;
@@ -38,7 +42,7 @@ li.dropdown {
   display: none;
   position: absolute;
   background-color: rgb(255, 144, 96);
-  width: 15.82%;
+  width: 20%;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }

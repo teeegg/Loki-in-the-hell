@@ -1,5 +1,6 @@
 body{
-  background-color: #4ABDAC;
+    background-image: url('../images/food01.jpg');
+    background-size: cover;
 }
 .logo{
   font-family: "League Script", cursive;
@@ -99,11 +100,11 @@ ul a{
 
 .swiper-container {
     width: 80%;
-    height: 80%;
+    height: 90%;
     padding-top: 2em;
     position: relative;
-    height: 20em;
-    z-index: -1;
+    height: 30em;
+    margin: 10em 10%;
 
 }
 .swiper-slide {
@@ -116,12 +117,6 @@ ul a{
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
     align-items: center;
 }
