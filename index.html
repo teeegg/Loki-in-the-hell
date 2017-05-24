@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/login.css">
     <!--Icon on the tag of a browser-->
     <link rel="shortcut icon" href="images/main.ico">
     <meta name="author" content="Shaun Xiong, Simon Shen">
@@ -29,6 +30,66 @@
     <div class="logo">
       <a href="index.html" title="Kitchenlife">Kitchenlife</a>
     </div>
+    
+    <!-- Login Form -->
+    <button class="signin" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log In</button>
+
+    <div id="id01" class="modal">
+
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+
+        <div class="container">
+          <label><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <button type="submit">Login</button>
+          <input type="checkbox" checked="checked"> Remember me
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+      
+    <!-- Sign up -->
+    <button class="signup" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Register</button>
+
+    <div id="id02" class="modal">
+
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+
+        <div class="container">
+          <label><b>Email</b></label>
+          <input type="text" placeholder="Enter Your Email" name="email" required>
+
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Your Password" name="rpsw" required>
+            
+          <label><b>Confirm Password</b></label>
+          <input type="password" placeholder="Confirm Your Password" name="cpsw" required>
+
+          <button type="submit">Sign Up</button>
+          <input type="checkbox" checked="checked"> Remember me
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button id="reg" type="submit">Sign Up</button>
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn" id="cac">Cancel</button>
+        </div>
+      </form>
+    </div>
+    
     <!--search form-->
     <div class="search">
           <!--search.php waiting to be inplemented-->
@@ -87,8 +148,8 @@
     <!-- Swiper Window-->
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide"><img src="images/chicken.png"></div>
+            <div class="swiper-slide"><img src="images/egg.jpg"></div>
             <div class="swiper-slide">Slide 3</div>
             <div class="swiper-slide">Slide 4</div>
             <div class="swiper-slide">Slide 5</div>
@@ -123,7 +184,8 @@
       });
     </script>
 
-
+    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/bg.js"></script>>
   <!--Searchbox-->
   </body>
 </html>

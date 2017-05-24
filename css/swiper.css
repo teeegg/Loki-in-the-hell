@@ -12,11 +12,13 @@
  *
  * Released on: March 10, 2017
  */
+
 .swiper-container {
   margin-left: auto;
   margin-right: auto;
   position: relative;
   overflow: hidden;
+  margin-top: 15%;
   /* Fix of Webkit flickering */
   z-index: 1;
 }
@@ -80,6 +82,11 @@
   height: 100%;
   position: relative;
 }
+
+.swiper-slide img {
+    width: 100%;
+}
+
 /* Auto Height */
 .swiper-container-autoheight,
 .swiper-container-autoheight .swiper-slide {

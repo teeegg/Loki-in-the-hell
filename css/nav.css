@@ -1,11 +1,10 @@
 
 .menuBar {
-  margin: auto;
-    position: absolute;
-    z-index: 99;
-    width: 80%;
-    top: 9em;
-    margin: 0 10%;
+  position: absolute;
+  z-index: 9;
+  width: 80%;
+  top: 9em;
+  margin: 0 9.4%;
 }
 
 ul {
