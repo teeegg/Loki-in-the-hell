@@ -1,6 +1,7 @@
-<?php 
+<?php
     session_start();
 ?>
+
 <!DOCtype html>
 <html>
   <head>
@@ -16,17 +17,24 @@
     <meta name="robots" content="index, follow">
     <meta name="description" content="A Kitchen Meal Website by 26 April 2017">
     <script src='jquery-3.2.1.min.js'></script>
-    <!--JavaScript Date-->
+    
     
   </head>
 
   
   <body>
     <header id='header01'>
+        <!--JavaScript Date-->
         <script>
             document.getElementById('header01').innerHTML = Date();
             $('#header01').css('color', 'white');
         </script>
+        
+        <br>
+        
+        <!--Color Picker-->
+        Choose a color to color the below text <input id="color_picker" type="color" onchange="showHex();"> <span id="color_hex_value"></span>
+        
     </header>
 
     <!--Logo-->
@@ -113,21 +121,21 @@
     <!--menubar-->
     <div class="menuBar">
       <ul>
-        <li class="menuItem"><a class="active" href="home">Home</a></li>
-        <li class="dropdown"><a href="receipt" class="dropbtn">Receipt</a>
+        <li class="menuItem"><a class="active" href="index.html">Home</a></li>
+        <li class="dropdown"><a class="dropbtn" href="receipt.html">Receipt</a>
           <div class="dropdown-content">
             <a href="receipt1">Receipt 1</a>
             <a href="receipt2">Receipt 2</a>
           </div>
         </li>
-        <li class="dropdown"><a href="ingredients" class="dropbtn">Ingredients</a>
+        <li class="dropdown"><a href="ingredients.html" class="dropbtn">Ingredients</a>
           <div class="dropdown-content">
             <a href="ingredient1">Ingredient 1</a>
             <a href="ingredient2">Ingredient 2</a>
           </div>
         </li>
-        <li class="menuItem"><a href="health">Health</a></li>
-        <li class="menuItem"><a href="myPage">My Page</a></li>
+        <li class="menuItem"><a href="health.html">Health</a></li>
+        <li class="menuItem"><a href="myPage.html">My Page</a></li>
       </ul>
     </div>
     <!--
@@ -197,7 +205,8 @@
     </script>
 
     <script type="text/javascript" src="js/login.js"></script>
-    <script type="text/javascript" src="js/bg.js"></script>>
+    <script type="text/javascript" src="js/bg.js"></script>
+    <script type="text/javascript" src="js/colorPicker.js"></script>
   <!--Searchbox-->
   </body>
 </html>

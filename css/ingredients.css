@@ -1,0 +1,51 @@
+
+.logo {
+    position: absolute;
+    top: 8px;
+}
+
+.ingredientsFrame {
+    background: transparent url("https://www.toptal.com/designers/subtlepatterns/patterns/tex2res4.png") repeat scroll 0% 0%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.receiptIngredient {
+    background: transparent url("https://www.toptal.com/designers/subtlepatterns/patterns/nasty_fabric.png") repeat scroll 0% 0%;
+    max-width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(250, 250, 250, 0.5), 0 6px 20px 0 rgba(250, 250, 250, 0.19);
+}
+
+.receiptIngredient h1 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+.ingredientsFrame img {
+    max-width: 50%;
+    margin-left: 80px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+
+.IngredientContainer {
+    float: right;
+    margin-right: 6em;
+}
+
+.IngredientContainer h2 {
+    color: darkorange;
+    font-size: 25pt;
+    font-family: 'Nunito', sans-serif;
+}
+
+.IngredientContainer ul {
+    border-radius: 5px;
+}

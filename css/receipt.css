@@ -1,0 +1,64 @@
+body {
+    background: transparent url("https://www.toptal.com/designers/subtlepatterns/patterns/food.png") repeat scroll 0% 0%;
+    height: auto;
+}
+
+.receiptFrame {
+    background: transparent url("https://www.toptal.com/designers/subtlepatterns/patterns/tex2res4.png") repeat scroll 0% 0%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.receiptOverview {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.receiptOverview img {
+    width: 48%;
+    
+}
+
+.receiptOverview div {
+    width: 48%;
+    float: right;
+    margin-top: 10%;
+}
+
+.receiptOverview h2 {
+    color: aliceblue;
+    font-size: 25pt;
+    font-family: 'Lobster', cursive;
+}
+
+.receiptOverview p {
+    color:darkorange;
+    font-size: 18pt;
+    font-family: 'Nunito', sans-serif;
+}
+
+.receiptOverview a {
+    text-decoration: none;
+    color: royalblue;
+    font-size: 19pt;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    transition: color 1s ease-out;
+}
+
+.receiptOverview a:hover {
+    text-decoration: underline;
+    color: darkblue;
+}
+
+.scrollTop {
+    width: 5%;
+    position: sticky;
+    right: 20px;
+    bottom: 0;
+    margin: 0 93%;
+}

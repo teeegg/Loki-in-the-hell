@@ -1,20 +1,21 @@
 <?php
-session_start();
+$session_start();
 //$username = mysqli_real_escape_string($_POST['username']);
-$email = $_POST["email"];
+$username = $_POST["username"];
 $password = $_POST["password"];
 
-
-
-	include 'conn.php';
-	$user_query = "select * from user where email = '$email'";
+if ($username == "" || $password == ""){
+	echo "<script>alert('Please enter your username/password;'>";
+}
+else{
+	include '../conn.php';
+	$user_query = "select * from user where username = '$username'';";
 	$result = mysqli_query($connection,$user_query);
-    $row = mysqli_fetch_array($result);
+  $row = mysqli_fetch_array($result);
 	$hashed_pass = $row['password'];
 	$decrypt_hash = password_verify($password, $hashed_pass);
-    /*
 	if ($hash == 0){
-		header("Location: index.html")
+		header("Location: ../main.php")
 
 	}else {
 		$user_query = "select * from user where username = '$username' and password = '$hashed_pass';';";
@@ -27,14 +28,6 @@ $password = $_POST["password"];
 		header("Location: ../mypage.php")
 	}
 }
-    */
-    
-    if ($decrypt_hash == true){
-        $_SESSION['email'] = $email;
-        header("Location: index.html");
-    }else{
-        echo 'password not correct.';
-    }
-
+}
 
  ?>

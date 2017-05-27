@@ -1,6 +1,7 @@
 body{
-    background-image: url('../images/food01.jpg');
-    background-size: cover;
+  color: black;
+  background-size: cover;
+  background-color: rgb(255, 192, 131);
 }
 .logo{
   font-family: "League Script", cursive;
