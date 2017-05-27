@@ -1,0 +1,126 @@
+<!DOCtype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Kitchenlife | Where you can find a recipe</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/receipt.css">
+    <link rel="stylesheet" type="text/css" href="css/ingredients.css">
+    <link rel="stylesheet" type="text/css" href="css/myPage.css">
+    <link rel="stylesheet" type="text/css" href="css/button.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--Icon on the tag of a browser-->
+    <link rel="shortcut icon" href="images/main.ico">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> 
+    <meta name="author" content="Shaun Xiong, Simon Shen">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="A Kitchen Meal Website by 26 April 2017">
+    <script src='jquery-3.2.1.min.js'></script>
+    <script src="js/jquery.sticky.js"></script>
+  </head>
+    
+    <body>
+    
+        <!--Logo-->
+        <div class="logo">
+          <a href="index.html" title="Kitchenlife">Kitchenlife</a>
+        </div>
+        
+        <!--menubar-->
+        <div class="menuBar">
+          <ul>
+            <li class="menuItem"><a class="active" href="index.html">Home</a></li>
+            <li class="dropdown"><a class="dropbtn" href="receipt.html">Receipt</a>
+              <div class="dropdown-content">
+                <a href="receipt1">Receipt 1</a>
+                <a href="receipt2">Receipt 2</a>
+              </div>
+            </li>
+            <li class="dropdown"><a href="ingredients.html" class="dropbtn">Ingredients</a>
+              <div class="dropdown-content">
+                <a href="ingredient1">Ingredient 1</a>
+                <a href="ingredient2">Ingredient 2</a>
+              </div>
+            </li>
+            <li class="menuItem"><a href="health.html">Health</a></li>
+            <li class="menuItem"><a href="myPage.html">My Page</a></li>
+          </ul>
+        </div>
+        
+        <div class="mypageFrame">
+            
+            <div class="mypageMain">
+                <div class="myInformation">
+                    <img src="images/icon/cookIcon.png">
+                    <h1>G'Day *Username*!</h1>
+                </div>
+                <div class="newReceipt">
+                    <a href='#' class='slideButton' id="slide01">Create New Receipt</a>
+                    <a href='#' class='slideButton' id="slide02">My Receipt</a>
+                    <div class="addReceiptDetails">
+
+                        <!--insert receipt image-->
+                        <span>Receipt Image: </span>
+                        <img id="blah" src="#" alt="your image" />
+                        <br>
+                        <input type='file' onchange="readURL(this);" /><br>
+
+                        <!--Adding receipt name & receipt ingredients-->
+                        <form action="">
+                            Receipt name:<br> 
+                            <input type="text" id="receiptName" name="ReceiptName" placeholder="Receipt Name">
+                            <br><br>
+                            
+                            Receipt Steps:<br> 
+                            <textarea rows="4" cols="50" name="overview" placeholder="Steps overview you need to do for your receipt"></textarea>
+                            <br><br>
+
+                            Ingredients:<br>
+                            <button type="button" onclick="addIngredientInput()">Add Ingredient</button> <br> 
+                            <input type="text" class="ingredientTextfield" name="IngredientName" placeholder="Ingredient"> 
+                            <br><br>
+                            <input type="submit" value="Create">
+                        </form>
+                    </div>
+                    
+                    <div class="receiptIngredient" id="ingredient01">
+                        <h1>Roasted Butternut Squash and Spinach</h1>
+                        <img src="images/receipt/Butternut.jpeg">
+                        <div class="IngredientContainer">
+                            <h2>Ingredients</h2>
+                            <ul class="list-group">
+                                <li class="list-group-item">1 medium butternut squash</li>
+                                <li class="list-group-item">2 tbsp. olive oil</li>
+                                <li class="list-group-item">1 tsp. olive oil</li>
+                                <li class="list-group-item">Kosher salt</li>
+                                <li class="list-group-item">pepper</li>
+                                <li class="list-group-item">¼ c. Sliced almonds</li>
+                                <li class="list-group-item">¼ tsp. ground cinnamon</li>
+                                <li class="list-group-item">1 pinch cayenne pepper</li>
+                                <li class="list-group-item">4 c. baby spinach</li>
+                            </ul>
+                            
+                            <h2>Receipt Steps</h2>
+                            <p class="overview">Throw this healthy dinner together in just 15 minutes with seasoned butternut squash and crunchy almonds folded together with fresh spinach.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Back To Top Scrolling Butotn-->
+        <div class="scrollTop">
+            <a href="#" id="backTop">
+                <img src="images/icon/bktop.svg" height="60" width="60">
+            </a>
+        </div>
+    
+        <script src="js/sticky.js"></script>
+        <script src="js/backTop.js"></script>
+        <script src="js/updateImage.js"></script>
+        <script src="js/addReceiptButton.js"></script>
+        <script src="js/slideToggle.js"></script>
+    </body>
+</html>

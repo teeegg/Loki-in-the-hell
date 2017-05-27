@@ -1,7 +1,7 @@
 
 .menuBar {
   position: absolute;
-  z-index: 9;
+  z-index: 100;
   width: 80%;
   top: 9em;
   margin: 0 9.4%;
