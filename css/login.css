@@ -8,20 +8,6 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
 }
 
-.signin {
-    position: absolute;
-    z-index: 8;
-    right: 25em;
-    top: 5em; 
-}
-
-.signup {
-    position: absolute;
-    z-index: 8;
-    right: 35em;
-    top: 5em; 
-}
-
 /* Set a style for all buttons */
 button {
     background-color: #ff6600;
@@ -35,6 +21,27 @@ button {
 
 button:hover {
     opacity: 0.8;
+}
+
+.signin {
+    position: absolute;
+    z-index: 8;
+    right: 15em;
+    top: 2em; 
+}
+
+.signup {
+    position: absolute;
+    z-index: 8;
+    right: 25em;
+    top: 2em; 
+}
+
+.signout {
+    position: absolute;
+    z-index: 8;
+    right: 5em;
+    top: 2em; 
 }
 
 /* Extra styles for the cancel button */

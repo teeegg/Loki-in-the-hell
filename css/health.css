@@ -1,0 +1,79 @@
+
+.healthMain {
+    background: transparent url("https://www.toptal.com/designers/subtlepatterns/patterns/school.png") repeat scroll 0% 0%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: darkorange;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 25px;
+}
+
+.bmiMain {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.bmiMain h1 {
+    font-size: 25pt;
+    font-weight: 800;
+}
+
+.bmiMain p {
+    padding-left: 40px;
+    font-size: 20pt;
+}
+
+.bmiMain #height {
+    width: 100%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    width: 20%;
+    font-size: 15pt;
+}
+
+.bmiMain #height:focus {
+    border: 3px solid #555;
+}
+
+.bmiMain #weight {
+    width: 100%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    width: 20%;
+    font-size: 15pt;
+}
+
+.bmiMain #weight:focus {
+    border: 3px solid #555;
+}
+
+.bmiMain #computeButton {
+    background-color: orangered;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 16pt;
+    border-radius: 5px;
+    margin-left: 40px;
+}
+ 
+.bmiMain img {
+    position: absolute;
+    right: 20em;
+    top: 23em;
+}
