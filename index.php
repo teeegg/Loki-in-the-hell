@@ -65,7 +65,7 @@
     <!--search form-->
     <div class="search">
           <!--search.php waiting to be inplemented-->
-      <form method="get" name="search" action="null">
+      <form method="post" name="search" action="includes/search.inc.php">
         <input type="text" placeholder="Search recipes/authors">
         <input type="image" name="submit" src="images/search.svg" height="20px" width="20px">
       </form>
@@ -74,7 +74,7 @@
     <div class="menuBar">
       <ul>
         <li class="menuItem"><a class="active" href="index.php">Home</a></li>
-        <li class="dropdown"><a class="dropbtn" href="receipt.html">Receipt</a>
+        <li class="dropdown"><a class="dropbtn" href="receipt.php">Receipt</a>
           <div class="dropdown-content">
             <a href="receipt1">Receipt 1</a>
             <a href="receipt2">Receipt 2</a>

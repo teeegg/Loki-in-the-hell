@@ -3,6 +3,7 @@ session_start();
 //$username = mysqli_real_escape_string($_POST['username']);
 //prevent sql injection by using mysqli_real_escape_string()
 include '../conn.php';
+include '../PasswordStorage.php';
 
 $email = mysqli_real_escape_string($connection,$_POST["email"]);
 $password = mysqli_real_escape_string($connection,$_POST["password"]);
@@ -10,7 +11,6 @@ $password = mysqli_real_escape_string($connection,$_POST["password"]);
 // sql statement protected by prepare statement
 	$user_query = $connection->prepare("select * from user where email = ?");
     $user_query->bind_param("s", $uemail);
-
     $uemail = $email;
     
     $user_query->execute();
@@ -18,9 +18,11 @@ $password = mysqli_real_escape_string($connection,$_POST["password"]);
 	$result = $user_query->get_result();
 
 
-    $row = mysqli_fetch_array($result);
+    $row = $result->fetch_assoc();
 	$hashed_pass = $row['password'];
-	$decrypt_hash = password_verify($password, $hashed_pass);
+    $pass = new PasswordStorage;
+	$decrypt_hash = $pass->verify_password($password, $hashed_pass);
+    echo $decrypt_hash;
     /*
 	if ($hash == 0){
 		header("Location: index.html")

@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    include 'conn.php';
+?>
 <!DOCtype html>
 <html>
   <head>
@@ -49,6 +53,28 @@
         </div>
         
         <div class="receiptFrame">
+            <?php
+                $sql = "select * from recipes";
+                $result = mysqli_query($connection,$sql);
+                
+                if(mysqli_num_rows($result)){
+                    while($row=mysqli_fetch_assoc($result)){
+                        $rid = $row['rid'];
+                        $rname = $row['rname'];
+                        $steps = $row['steps'];
+                        $extension = $row['extension'];
+                        $author = $row['username'];
+                        echo '<div class="receiptOverview" style="width: 70%;
+                            margin: 0 auto;margin-bottom: 40px;"><img style="width: 48%;" src="uploads/'.$rid.'.'.$extension.'">
+                            <div>
+                            <h2>'.$rname.'</h2>
+                            <h2>By '.$author.'</h2>
+                            <p>'.$steps.'</p></div></div>';
+                    }
+                }
+            
+            ?>
+            <!--
             <div class="receiptOverview">
         
                 <img src="images/receipt/Butternut.jpeg">
@@ -125,6 +151,7 @@
             
             
         </div>
+-->
         
         <!--Back To Top Scrolling Butotn-->
         <div class="scrollTop">

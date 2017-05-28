@@ -1,5 +1,7 @@
 
-
+<?php
+include 'header.php';
+?>
       
     <!-- Sign up -->
     <button class="signup" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Register</button>

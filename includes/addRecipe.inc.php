@@ -11,7 +11,7 @@ if (isset($_POST['submit'])){
     $ingredient = mysqli_real_escape_string($connection,$_POST['ingredient']);
     */
     // sql statement using prepare statement
-    $add_query = $connection->prepare('Insert into recipes VALUES (?,?,?,?)');
+    $add_query = $connection->prepare('Insert into recipes VALUES (?,?,?,?,?)');
     
     /*
     $add_ingredient = $connection->prepare('Insert into ingredient VALUES(?)');
@@ -22,7 +22,7 @@ if (isset($_POST['submit'])){
     $rid = uniqid('',true);
     $uid = $_SESSION['email'];
     // bind required parameter to the actual ones
-    $add_query->bind_param("ssss",$prid,$puid,$pname,$psteps);
+    $add_query->bind_param("sssss",$prid,$puid,$pname,$psteps,$pextension);
     /*
     $add_ingredient->bind_param("s",$pingredient);
     $add_r_i->bind_param("ss",$prid,$pringredient);
@@ -35,12 +35,11 @@ if (isset($_POST['submit'])){
     $pingredient = $ingredient;
     */
     
-    $add_query->execute();
+    
     /*
     $add_ingredient->execute();
     $add_r_i->execute();
     */
-    $result = $add_query->get_result();
     
     $fileName = $_FILES['file']['name'];
     $fileTmpName = $_FILES['file']['tmp_name'];
@@ -49,7 +48,8 @@ if (isset($_POST['submit'])){
     $fileType = $_FILES['file']['type'];
     
     $fileExtension = strtolower(end(explode(".",$fileName)));
-    
+    $pextension = $fileExtension;
+    $add_query->execute();
     // allowed extension of images
     $allowed_extension = ['jpg','jpeg','png','gif'];
     // check if the extension of uploaded file is correct
@@ -67,7 +67,7 @@ if (isset($_POST['submit'])){
     move_uploaded_file($fileTmpName,$fileDes);
     
     
-    header("Location: ../mypage.html");
+    //header("Location: ../mypage.html");
     }}
 }else{
     echo "Submit not successfully.";
