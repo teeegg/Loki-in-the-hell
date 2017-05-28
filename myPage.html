@@ -62,26 +62,31 @@
                     <div class="addReceiptDetails">
 
                         <!--insert receipt image-->
-                        <span>Receipt Image: </span>
-                        <img id="blah" src="#" alt="your image" />
-                        <br>
-                        <input type='file' onchange="readURL(this);" /><br>
+                        
+                        
+                            <br>
 
                         <!--Adding receipt name & receipt ingredients-->
-                        <form action="">
+                        
+                        <form action="includes/addRecipe.inc.php" method="post" enctype="multipart/form-data">
+                        <span>Receipt Image: </span>
+                        <img id="blah" src="#" alt="your image" />
+                            <br>
+                        <input type='file' name="file" onchange="readURL(this);" />         
+
                             Receipt name:<br> 
-                            <input type="text" id="receiptName" name="ReceiptName" placeholder="Receipt Name">
+                            <input type="text" id="receiptName" name="name" placeholder="Receipt Name">
                             <br><br>
                             
                             Receipt Steps:<br> 
-                            <textarea rows="4" cols="50" name="overview" placeholder="Steps overview you need to do for your receipt"></textarea>
+                            <textarea rows="4" cols="50" name="steps" placeholder="Steps overview you need to do for your receipt"></textarea>
                             <br><br>
 
                             Ingredients:<br>
                             <button type="button" onclick="addIngredientInput()">Add Ingredient</button> <br> 
-                            <input type="text" class="ingredientTextfield" name="IngredientName" placeholder="Ingredient"> 
+                            <input type="text" class="ingredientTextfield" name="ingredient" placeholder="Ingredient"/> 
                             <br><br>
-                            <input type="submit" value="Create">
+                            <button type="submit" value="submit" name="submit">Upload</button>
                         </form>
                     </div>
                     
